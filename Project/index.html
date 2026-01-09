@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JobFinder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            screens: {
+              xs: { min: "320px", max: "440px" },
+            },
+            colors: {
+              black: "#000000",
+              white: "#ffffff",
+            },
+            screens: {
+              sm: "500px",
+              md: "768px",
+              lg: "1024px",
+              xl: "1280px",
+              "2xl": "1536px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="bg-[#f9fafb]">
+    <header class="bg-white shadow-sm">
+      <nav
+        class="max-w-[1316px] mx-auto flex justify-between items-center h-[103px] px-4 sm:px-[100px]"
+      >
+        <h1 class="text-2xl font-bold text-[#4f46e5]">JobFinder</h1>
+        <ul class="flex gap-4 sm:gap-6 items-center">
+          <li>
+            <a
+              href="#"
+              class="text-base text-[#374151] hover:text-[#4f46e5] duration-300"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-base text-[#374151] hover:text-[#4f46e5] duration-300"
+              >Jobs</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-base text-[#374151] hover:text-[#4f46e5] duration-300"
+              >Companies</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-base text-[#374151] hover:text-[#4f46e5] duration-300"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a href="postJob.html">
+              <button
+                class="bg-[#4f46e5] hover:bg-[#4338ca] text-white px-4 py-2 rounded-[5px] transition duration-300"
+              >
+                Post a Job
+              </button>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <div
+        class="w-full h-[400px] md:h-[300px] bg-[#eef2ff] text-center p-[10px]"
+      >
+        <h2 class="mt-[40px] text-[#111827] text-[40px] font-bold">
+          Find your dream job
+        </h2>
+        <p class="leading-[1.6] p-[3px] my-[20px]">
+          Search from thousands of listings and apply today.
+        </p>
+        <div
+          class="grid grid-cols-1 md:grid-cols-[80%_20%] w-[50%] md:w-full max-w-[800px] mx-auto gap-3"
+        >
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <input
+              class="w-full h-[43px] bg-white border-2 border-gray-300 rounded-[5px] px-2"
+              type="text"
+              placeholder="Job title or keyword"
+            />
+            <input
+              class="w-full h-[43px] bg-white border-2 border-gray-300 rounded-[5px] px-2"
+              type="text"
+              placeholder="Location"
+            />
+          </div>
+          <button
+            class="bg-[#4f46e5] text-white w-[70px] h-[43px] rounded-[5px] mx-auto md:mx-0"
+          >
+            Search
+          </button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div
+        class="cards grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-full max-w-[1400px] mx-auto gap-6 bg-[#f9fafb] py-12 px-6"
+      >
+        <div
+          class="job-card rounded-[8px] bg-white w-full max-w-sm mx-auto p-5 flex flex-col justify-between"
+        >
+          <div>
+            <h3 class="text-[24px] font-bold mb-1 text-start">
+              Frontend Developer
+            </h3>
+            <p class="text-[#9ca3af] text-[16px] text-start">Tech Solutions</p>
+            <p class="text-[#9ca3af] text-[14px] text-start mb-3">Remote</p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >Full-time</span
+              >
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >Remote</span
+              >
+            </div>
+          </div>
+          <div class="mt-4 text-center">
+            <p class="text-[#111827] font-bold text-[20px]">Rs 60k - 80k</p>
+            <a href="applyNow.html">
+              <button
+                class="mt-3 bg-[#4f46e5] text-white px-4 py-2 rounded-[5px]"
+              >
+                Apply Now
+              </button></a
+            >
+          </div>
+        </div>
+        <div
+          class="job-card rounded-[8px] bg-white w-full max-w-sm mx-auto p-5 flex flex-col justify-between"
+        >
+          <div>
+            <h3 class="text-[24px] font-bold mb-1 text-start">
+              Frontend Developer
+            </h3>
+            <p class="text-[#9ca3af] text-[16px] text-start">TechVerse</p>
+            <p class="text-[#9ca3af] text-[14px] text-start mb-3">Karachi</p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >Remote</span
+              >
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >Full-time</span
+              >
+            </div>
+          </div>
+          <div class="mt-4 text-center">
+            <p class="text-[#111827] font-bold text-[20px]">Rs 60k - 90k</p>
+            <a href="applyNow.html">
+              <button
+                class="mt-3 bg-[#4f46e5] text-white px-4 py-2 rounded-[5px]"
+              >
+                Apply Now
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div
+          class="job-card rounded-[8px] bg-white w-full max-w-sm mx-auto p-5 flex flex-col justify-between"
+        >
+          <div>
+            <h3 class="text-[24px] font-bold mb-1 text-start">
+              React Developer
+            </h3>
+            <p class="text-[#9ca3af] text-[16px] text-start">SoftNova</p>
+            <p class="text-[#9ca3af] text-[14px] text-start mb-3">Lahore</p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >On-site</span
+              >
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >Full-time</span
+              >
+            </div>
+          </div>
+          <div class="mt-4 text-center">
+            <p class="text-[#111827] font-bold text-[20px]">Rs 100k - 150k</p>
+            <a href="applyNow.html">
+              <button
+                class="mt-3 bg-[#4f46e5] text-white px-4 py-2 rounded-[5px]"
+              >
+                Apply Now
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div
+          class="job-card rounded-[8px] bg-white w-full max-w-sm mx-auto p-5 flex flex-col justify-between"
+        >
+          <div>
+            <h3 class="text-[24px] font-bold mb-1 text-start">Data Analyst</h3>
+            <p class="text-[#9ca3af] text-[16px] text-start">InsightsPro</p>
+            <p class="text-[#9ca3af] text-[14px] text-start mb-3">Islamabad</p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >Part-time</span
+              >
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >Remote</span
+              >
+            </div>
+          </div>
+          <div class="mt-4 text-center">
+            <p class="text-[#111827] font-bold text-[20px]">Rs 45k - 70k</p>
+            <a href="applyNow.html">
+              <button
+                class="mt-3 bg-[#4f46e5] text-white px-4 py-2 rounded-[5px]"
+              >
+                Apply Now
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div
+          class="job-card rounded-[8px] bg-white w-full max-w-sm mx-auto p-5 flex flex-col justify-between"
+        >
+          <div>
+            <h3 class="text-[24px] font-bold mb-1 text-start">
+              Flutter Developer
+            </h3>
+            <p class="text-[#9ca3af] text-[16px] text-start">AppNexus</p>
+            <p class="text-[#9ca3af] text-[14px] text-start mb-3">Peshawar</p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >Internship</span
+              >
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >On-site</span
+              >
+            </div>
+          </div>
+          <div class="mt-4 text-center">
+            <p class="text-[#111827] font-bold text-[20px]">Rs 25k - 35k</p>
+            <a href="applyNow.html">
+              <button
+                class="mt-3 bg-[#4f46e5] text-white px-4 py-2 rounded-[5px]"
+              >
+                Apply Now
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div
+          class="job-card rounded-[8px] bg-white w-full max-w-sm mx-auto p-5 flex flex-col justify-between"
+        >
+          <div>
+            <h3 class="text-[24px] font-bold mb-1 text-start">
+              Machine Learning Engineer
+            </h3>
+            <p class="text-[#9ca3af] text-[16px] text-start">AI Matrix</p>
+            <p class="text-[#9ca3af] text-[14px] text-start mb-3">Remote</p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >Full-time</span
+              >
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >Remote</span
+              >
+            </div>
+          </div>
+          <div class="mt-4 text-center">
+            <p class="text-[#111827] font-bold text-[20px]">Rs 150k - 220k</p>
+            <a href="applyNow.html">
+              <button
+                class="mt-3 bg-[#4f46e5] text-white px-4 py-2 rounded-[5px]"
+              >
+                Apply Now
+              </button></a
+            >
+          </div>
+        </div>
+        <div
+          class="job-card rounded-[8px] bg-white w-full max-w-sm mx-auto p-5 flex flex-col justify-between"
+        >
+          <div>
+            <h3 class="text-[24px] font-bold mb-1 text-start">
+              UI/UX Designer
+            </h3>
+            <p class="text-[#9ca3af] text-[16px] text-start">DesignHive</p>
+            <p class="text-[#9ca3af] text-[14px] text-start mb-3">Lahore</p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >Part-time</span
+              >
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >On-site</span
+              >
+            </div>
+          </div>
+          <div class="mt-4 text-center">
+            <p class="text-[#111827] font-bold text-[20px]">Rs 70k - 100k</p>
+            <a href="applyNow.html">
+              <button
+                class="mt-3 bg-[#4f46e5] text-white px-4 py-2 rounded-[5px]"
+              >
+                Apply Now
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div
+          class="job-card rounded-[8px] bg-white w-full max-w-sm mx-auto p-5 flex flex-col justify-between"
+        >
+          <div>
+            <h3 class="text-[24px] font-bold mb-1 text-start">
+              DevOps Engineer
+            </h3>
+            <p class="text-[#9ca3af] text-[16px] text-start">CloudCore</p>
+            <p class="text-[#9ca3af] text-[14px] text-start mb-3">Islamabad</p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >Full-time</span
+              >
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >Hybrid</span
+              >
+            </div>
+          </div>
+          <div class="mt-4 text-center">
+            <p class="text-[#111827] font-bold text-[20px]">Rs 110k - 160k</p>
+            <a href="applyNow.html">
+              <button
+                class="mt-3 bg-[#4f46e5] text-white px-4 py-2 rounded-[5px]"
+              >
+                Apply Now
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div
+          class="job-card rounded-[8px] bg-white w-full max-w-sm mx-auto p-5 flex flex-col justify-between"
+        >
+          <div>
+            <h3 class="text-[24px] font-bold mb-1 text-start">
+              SEO Specialist
+            </h3>
+            <p class="text-[#9ca3af] text-[16px] text-start">Rankify</p>
+            <p class="text-[#9ca3af] text-[14px] text-start mb-3">Remote</p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >Part-time</span
+              >
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >Remote</span
+              >
+            </div>
+          </div>
+          <div class="mt-4 text-center">
+            <p class="text-[#111827] font-bold text-[20px]">Rs 50k - 80k</p>
+            <a href="applyNow.html">
+              <button
+                class="mt-3 bg-[#4f46e5] text-white px-4 py-2 rounded-[5px]"
+              >
+                Apply Now
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div
+          class="job-card rounded-[8px] bg-white w-full max-w-sm mx-auto p-5 flex flex-col justify-between"
+        >
+          <div>
+            <h3 class="text-[24px] font-bold mb-1 text-start">
+              Android Developer
+            </h3>
+            <p class="text-[#9ca3af] text-[16px] text-start">Mobinext</p>
+            <p class="text-[#9ca3af] text-[14px] text-start mb-3">Karachi</p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >Internship</span
+              >
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >Hybrid</span
+              >
+            </div>
+          </div>
+          <div class="mt-4 text-center">
+            <p class="text-[#111827] font-bold text-[20px]">Rs 40k - 70k</p>
+            <a href="applyNow.html">
+              <button
+                class="mt-3 bg-[#4f46e5] text-white px-4 py-2 rounded-[5px]"
+              >
+                Apply Now
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div
+          class="job-card rounded-[8px] bg-white w-full max-w-sm mx-auto p-5 flex flex-col justify-between"
+        >
+          <div>
+            <h3 class="text-[24px] font-bold mb-1 text-start">
+              React Developer
+            </h3>
+            <p class="text-[#9ca3af] text-[16px] text-start">DevSparks</p>
+            <p class="text-[#9ca3af] text-[14px] text-start mb-3">Multan</p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >Full-time</span
+              >
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >On-site</span
+              >
+            </div>
+          </div>
+          <div class="mt-4 text-center">
+            <p class="text-[#111827] font-bold text-[20px]">Rs 100k - 150k</p>
+            <a href="applyNow.html">
+              <button
+                class="mt-3 bg-[#4f46e5] text-white px-4 py-2 rounded-[5px]"
+              >
+                Apply Now
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div
+          class="job-card rounded-[8px] bg-white w-full max-w-sm mx-auto p-5 flex flex-col justify-between"
+        >
+          <div>
+            <h3 class="text-[24px] font-bold mb-1 text-start">
+              Data Scientist
+            </h3>
+            <p class="text-[#9ca3af] text-[16px] text-start">DataVerse</p>
+            <p class="text-[#9ca3af] text-[14px] text-start mb-3">Remote</p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >Full-time</span
+              >
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >Remote</span
+              >
+            </div>
+          </div>
+          <div class="mt-4 text-center">
+            <p class="text-[#111827] font-bold text-[20px]">Rs 150k - 200k</p>
+            <a href="applyNow.html">
+              <button
+                class="mt-3 bg-[#4f46e5] text-white px-4 py-2 rounded-[5px]"
+              >
+                Apply Now
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div
+          class="job-card rounded-[8px] bg-white w-full max-w-sm mx-auto p-5 flex flex-col justify-between"
+        >
+          <div>
+            <h3 class="text-[24px] font-bold mb-1 text-start">
+              Laravel Developer
+            </h3>
+            <p class="text-[#9ca3af] text-[16px] text-start">Softberry</p>
+            <p class="text-[#9ca3af] text-[14px] text-start mb-3">Peshawar</p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >Full-time</span
+              >
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >Remote</span
+              >
+            </div>
+          </div>
+          <div class="mt-4 text-center">
+            <p class="text-[#111827] font-bold text-[20px]">Rs 80k - 130k</p>
+            <a href="applyNow.html">
+              <button
+                class="mt-3 bg-[#4f46e5] text-white px-4 py-2 rounded-[5px]"
+              >
+                Apply Now
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div
+          class="job-card rounded-[8px] bg-white w-full max-w-sm mx-auto p-5 flex flex-col justify-between"
+        >
+          <div>
+            <h3 class="text-[24px] font-bold mb-1 text-start">
+              WordPress Developer
+            </h3>
+            <p class="text-[#9ca3af] text-[16px] text-start">WebWizards</p>
+            <p class="text-[#9ca3af] text-[14px] text-start mb-3">Rawalpindi</p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >Part-time</span
+              >
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >Hybrid</span
+              >
+            </div>
+          </div>
+          <div class="mt-4 text-center">
+            <p class="text-[#111827] font-bold text-[20px]">Rs 60k - 100k</p>
+            <a href="applyNow.html">
+              <button
+                class="mt-3 bg-[#4f46e5] text-white px-4 py-2 rounded-[5px]"
+              >
+                Apply Now
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div
+          class="job-card rounded-[8px] bg-white w-full max-w-sm mx-auto p-5 flex flex-col justify-between"
+        >
+          <div>
+            <h3 class="text-[24px] font-bold mb-1 text-start">
+              SEO Specialist
+            </h3>
+            <p class="text-[#9ca3af] text-[16px] text-start">RankBoosters</p>
+            <p class="text-[#9ca3af] text-[14px] text-start mb-3">Islamabad</p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >Part-time</span
+              >
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >Remote</span
+              >
+            </div>
+          </div>
+          <div class="mt-4 text-center">
+            <p class="text-[#111827] font-bold text-[20px]">Rs 50k - 70k</p>
+            <a href="applyNow.html">
+              <button
+                class="mt-3 bg-[#4f46e5] text-white px-4 py-2 rounded-[5px]"
+              >
+                Apply Now
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div
+          class="job-card rounded-[8px] bg-white w-full max-w-sm mx-auto p-5 flex flex-col justify-between"
+        >
+          <div>
+            <h3 class="text-[24px] font-bold mb-1 text-start">
+              AI Research Assistant
+            </h3>
+            <p class="text-[#9ca3af] text-[16px] text-start">MindTech</p>
+            <p class="text-[#9ca3af] text-[14px] text-start mb-3">Remote</p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >Internship</span
+              >
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >Remote</span
+              >
+            </div>
+          </div>
+          <div class="mt-4 text-center">
+            <p class="text-[#111827] font-bold text-[20px]">Rs 25k - 45k</p>
+            <a href="applyNow.html">
+              <button
+                class="mt-3 bg-[#4f46e5] text-white px-4 py-2 rounded-[5px]"
+              >
+                Apply Now
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div
+          class="job-card rounded-[8px] bg-white w-full max-w-sm mx-auto p-5 flex flex-col justify-between"
+        >
+          <div>
+            <h3 class="text-[24px] font-bold mb-1 text-start">
+              Systems Administrator
+            </h3>
+            <p class="text-[#9ca3af] text-[16px] text-start">SysCore</p>
+            <p class="text-[#9ca3af] text-[14px] text-start mb-3">Lahore</p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >Full-time</span
+              >
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >On-site</span
+              >
+            </div>
+          </div>
+          <div class="mt-4 text-center">
+            <p class="text-[#111827] font-bold text-[20px]">Rs 95k - 130k</p>
+            <a href="applyNow.html">
+              <button
+                class="mt-3 bg-[#4f46e5] text-white px-4 py-2 rounded-[5px]"
+              >
+                Apply Now
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div
+          class="job-card rounded-[8px] bg-white w-full max-w-sm mx-auto p-5 flex flex-col justify-between"
+        >
+          <div>
+            <h3 class="text-[24px] font-bold mb-1 text-start">
+              Game Developer
+            </h3>
+            <p class="text-[#9ca3af] text-[16px] text-start">PixelPlay</p>
+            <p class="text-[#9ca3af] text-[14px] text-start mb-3">Karachi</p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >Internship</span
+              >
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >Hybrid</span
+              >
+            </div>
+          </div>
+          <div class="mt-4 text-center">
+            <p class="text-[#111827] font-bold text-[20px]">Rs 45k - 90k</p>
+            <a href="applyNow.html">
+              <button
+                class="mt-3 bg-[#4f46e5] text-white px-4 py-2 rounded-[5px]"
+              >
+                Apply Now
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div
+          class="job-card rounded-[8px] bg-white w-full max-w-sm mx-auto p-5 flex flex-col justify-between"
+        >
+          <div>
+            <h3 class="text-[24px] font-bold mb-1 text-start">
+              IT Support Specialist
+            </h3>
+            <p class="text-[#9ca3af] text-[16px] text-start">TechAid</p>
+            <p class="text-[#9ca3af] text-[14px] text-start mb-3">Faisalabad</p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >Part-time</span
+              >
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >On-site</span
+              >
+            </div>
+          </div>
+          <div class="mt-4 text-center">
+            <p class="text-[#111827] font-bold text-[20px]">Rs 30k - 55k</p>
+            <a href="applyNow.html">
+              <button
+                class="mt-3 bg-[#4f46e5] text-white px-4 py-2 rounded-[5px]"
+              >
+                Apply Now
+              </button></a
+            >
+          </div>
+        </div>
+        <div
+          class="job-card rounded-[8px] bg-white w-full max-w-sm mx-auto p-5 flex flex-col justify-between"
+        >
+          <div>
+            <h3 class="text-[24px] font-bold mb-1 text-start">
+              WordPress Developer
+            </h3>
+            <p class="text-[#9ca3af] text-[16px] text-start">WebWizards</p>
+            <p class="text-[#9ca3af] text-[14px] text-start mb-3">Rawalpindi</p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >Part-time</span
+              >
+              <span
+                class="inline bg-[#e0e7ff] text-[#4338ca] px-2 py-1 text-[12px] rounded-full"
+                >Hybrid</span
+              >
+            </div>
+          </div>
+          <div class="mt-4 text-center">
+            <p class="text-[#111827] font-bold text-[20px]">Rs 60k - 100k</p>
+            <a href="applyNow.html">
+              <button
+                class="mt-3 bg-[#4f46e5] text-white px-4 py-2 rounded-[5px]"
+              >
+                Apply Now
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-[#f3f4f6] p-[40px] mt-[64px] text-center">
+      <p class="text-[#6b7280] text-center">
+        © 2025 JobFinder. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

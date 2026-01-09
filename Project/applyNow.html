@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apply Now</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <header class="bg-white shadow-sm">
+    <nav
+      class="max-w-[1316px] mx-auto flex justify-between items-center h-[103px] px-4 sm:px-[100px]"
+    >
+      <h1 class="text-2xl font-bold text-[#4f46e5]">JobFinder</h1>
+      <ul class="flex gap-4 sm:gap-6 items-center">
+        <li>
+          <a
+            href="index.html"
+            class="text-base text-[#374151] hover:text-[#4f46e5] duration-300"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="text-base text-[#374151] hover:text-[#4f46e5] duration-300"
+            >Jobs</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="text-base text-[#374151] hover:text-[#4f46e5] duration-300"
+            >Companies</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="text-base text-[#374151] hover:text-[#4f46e5] duration-300"
+            >Contact</a
+          >
+        </li>
+        <li>
+          <a href="postJob.html">
+            <button
+              class="bg-[#4f46e5] hover:bg-[#4338ca] text-white px-4 py-2 rounded-[5px] transition duration-300"
+            >
+              Post a Job
+            </button>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <body class="bg-[#f9fafb] text-[#111827]">
+    <section class="px-4 py-10">
+      <div
+        class="w-full max-w-[600px] mx-auto bg-white shadow-md rounded-lg p-6 sm:p-8"
+      >
+        <h2 class="text-[#4f46e5] text-2xl font-bold text-center mb-6">
+          Apply Now
+        </h2>
+        <form class="space-y-5">
+          <div>
+            <label
+              for="name"
+              class="block text-sm font-medium text-[#374151] mb-1"
+              >Full Name *</label
+            >
+            <input
+              type="text"
+              id="name"
+              required
+              placeholder="Enter your full name"
+              class="w-full p-3 border border-[#e5e7eb] rounded-md focus:outline-[#4f46e5]"
+            />
+          </div>
+          <div>
+            <label
+              for="email"
+              class="block text-sm font-medium text-[#374151] mb-1"
+              >Email Address *</label
+            >
+            <input
+              type="email"
+              id="email"
+              required
+              placeholder="example@gmail.com"
+              class="w-full p-3 border border-[#e5e7eb] rounded-md focus:outline-[#4f46e5]"
+            />
+          </div>
+          <div>
+            <label
+              for="phone"
+              class="block text-sm font-medium text-[#374151] mb-1"
+              >Phone Number *</label
+            >
+            <input
+              type="tel"
+              id="phone"
+              required
+              placeholder="03xx-xxxxxxx"
+              class="w-full p-3 border border-[#e5e7eb] rounded-md focus:outline-[#4f46e5]"
+            />
+          </div>
+          <div>
+            <label
+              for="position"
+              class="block text-sm font-medium text-[#374151] mb-1"
+              >Position Applying For *</label
+            >
+            <select
+              id="position"
+              required
+              class="w-full p-3 border border-[#e5e7eb] rounded-md text-[#111827] focus:outline-[#4f46e5]"
+            >
+              <option value="">Select a position</option>
+              <option>Frontend Developer</option>
+              <option>UI/UX Designer</option>
+              <option>Backend Developer</option>
+              <option>Data Analyst</option>
+            </select>
+          </div>
+          <div>
+            <label
+              for="location"
+              class="block text-sm font-medium text-[#374151] mb-1"
+              >City *</label
+            >
+            <input
+              type="text"
+              id="location"
+              required
+              placeholder="e.g., Lahore"
+              class="w-full p-3 border border-[#e5e7eb] rounded-md focus:outline-[#4f46e5]"
+            />
+          </div>
+          <div>
+            <label
+              for="jobType"
+              class="block text-sm font-medium text-[#374151] mb-1"
+              >Preferred Job Type *</label
+            >
+            <select
+              id="jobType"
+              required
+              class="w-full p-3 border border-[#e5e7eb] rounded-md text-[#111827] focus:outline-[#4f46e5]"
+            >
+              <option value="">Select job type</option>
+              <option>Full-time</option>
+              <option>Part-time</option>
+              <option>Remote</option>
+              <option>Internship</option>
+            </select>
+          </div>
+          <div>
+            <label
+              for="resume"
+              class="block text-sm font-medium text-[#374151] mb-1"
+              >Resume / CV *</label
+            >
+            <input
+              type="file"
+              id="resume"
+              accept=".pdf,.doc,.docx"
+              required
+              class="w-full p-2 border border-[#e5e7eb] rounded-md bg-white"
+            />
+          </div>
+          <div>
+            <label
+              for="portfolio"
+              class="block text-sm font-medium text-[#374151] mb-1"
+              >LinkedIn / Portfolio (Optional)</label
+            >
+            <input
+              type="url"
+              id="portfolio"
+              placeholder="https://linkedin.com/in/yourname"
+              class="w-full p-3 border border-[#e5e7eb] rounded-md focus:outline-[#4f46e5]"
+            />
+          </div>
+          <div>
+            <label
+              for="message"
+              class="block text-sm font-medium text-[#374151] mb-1"
+              >Cover Letter / Introduction</label
+            >
+            <textarea
+              id="message"
+              rows="4"
+              placeholder="Tell us about yourself..."
+              class="w-full p-3 border border-[#e5e7eb] rounded-md focus:outline-[#4f46e5]"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-[#4f46e5] text-white font-semibold py-3 rounded-md hover:bg-[#4338ca] transition duration-200"
+          >
+            Apply Now
+          </button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
